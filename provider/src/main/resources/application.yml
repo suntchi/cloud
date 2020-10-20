@@ -1,0 +1,24 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.226.128:3306/zl?characterEncoding=utf8
+    username: root
+    password: root
+    ## druid≈‰÷√
+  application:
+    name: cloud-provider
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  port: 8081
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8083/eureka/
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+
