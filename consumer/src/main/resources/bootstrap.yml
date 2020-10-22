@@ -3,6 +3,14 @@ server:
 spring:
   application:
     name: cloud-consumer
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        file-extension: yml
+        server-addr: 192.168.226.128:8848
+
 eureka:
   client:
     service-url:

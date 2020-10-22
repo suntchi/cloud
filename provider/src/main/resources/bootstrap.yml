@@ -8,9 +8,17 @@ spring:
     ## druid配置
   application:
     name: cloud-provider
+  cloud:
+    nacos:
+      config:
+        file-extension: yml
+        server-addr: 192.168.226.128:8848
+        namespace: b4fe3863-ee7b-407f-a42a-26ea0ee8eadc
+
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
 server:
   port: 8081
 
