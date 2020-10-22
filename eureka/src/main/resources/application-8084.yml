@@ -1,0 +1,12 @@
+server:
+  port: 8084
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eurake-8083.com:8083/eureka/
+  instance:
+    hostname: eurake-8084.com
+    instance-id: eureka-server-8084
+spring:
+  application:
+    name: eureka-server
